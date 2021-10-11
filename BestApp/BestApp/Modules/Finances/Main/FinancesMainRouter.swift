@@ -1,5 +1,5 @@
 //
-//  HomeRouter.swift
+//  FinancesMainRouter.swift
 //  BestApp
 //
 //  Created by Kazakevich, Vitaly on 11.10.21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-final class HomeRouter {
+final class FinancesMainRouter {
     private let services: ServiceContainer
 
     init(services: ServiceContainer) {
@@ -15,10 +15,6 @@ final class HomeRouter {
     }
 
     func makeView() -> some View {
-        return HomeView(router: self)
-    }
-
-    func financeTab() -> some View {
-        FinancesMainRouter(services: services).makeView()
+        return FinancesMainView(viewModel: FinancesMainViewModel(dependencies: .init()), router: self)
     }
 }

@@ -16,6 +16,10 @@
 		759DFB5F2714691200781163 /* HomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759DFB5E2714691200781163 /* HomeContract.swift */; };
 		759DFB612714691A00781163 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759DFB602714691A00781163 /* HomeRouter.swift */; };
 		759DFB632714692200781163 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759DFB622714692200781163 /* HomeViewModel.swift */; };
+		759DFB67271470C100781163 /* FinancesMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759DFB66271470C100781163 /* FinancesMainView.swift */; };
+		759DFB69271470CF00781163 /* FinancesMainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759DFB68271470CF00781163 /* FinancesMainRouter.swift */; };
+		759DFB6B271470DB00781163 /* FinancesMainContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759DFB6A271470DB00781163 /* FinancesMainContract.swift */; };
+		759DFB6D271470E900781163 /* FinancesMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759DFB6C271470E900781163 /* FinancesMainViewModel.swift */; };
 		B01FDD392713875D001A696C /* BestAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01FDD382713875D001A696C /* BestAppApp.swift */; };
 		B01FDD3D2713875E001A696C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B01FDD3C2713875E001A696C /* Assets.xcassets */; };
 		B01FDD402713875E001A696C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B01FDD3F2713875E001A696C /* Preview Assets.xcassets */; };
@@ -57,6 +61,10 @@
 		759DFB5E2714691200781163 /* HomeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContract.swift; sourceTree = "<group>"; };
 		759DFB602714691A00781163 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		759DFB622714692200781163 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		759DFB66271470C100781163 /* FinancesMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancesMainView.swift; sourceTree = "<group>"; };
+		759DFB68271470CF00781163 /* FinancesMainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancesMainRouter.swift; sourceTree = "<group>"; };
+		759DFB6A271470DB00781163 /* FinancesMainContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancesMainContract.swift; sourceTree = "<group>"; };
+		759DFB6C271470E900781163 /* FinancesMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancesMainViewModel.swift; sourceTree = "<group>"; };
 		B01FDD352713875D001A696C /* BestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B01FDD382713875D001A696C /* BestAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestAppApp.swift; sourceTree = "<group>"; };
 		B01FDD3C2713875E001A696C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -129,6 +137,25 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		759DFB642714708500781163 /* Finances */ = {
+			isa = PBXGroup;
+			children = (
+				759DFB65271470B400781163 /* Main */,
+			);
+			path = Finances;
+			sourceTree = "<group>";
+		};
+		759DFB65271470B400781163 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				759DFB66271470C100781163 /* FinancesMainView.swift */,
+				759DFB68271470CF00781163 /* FinancesMainRouter.swift */,
+				759DFB6A271470DB00781163 /* FinancesMainContract.swift */,
+				759DFB6C271470E900781163 /* FinancesMainViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		B01FDD2C2713875D001A696C = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +214,7 @@
 		B01FDD6227138774001A696C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				759DFB642714708500781163 /* Finances */,
 				759DFB5B271468F300781163 /* Home */,
 				759DFB4F271465DC00781163 /* Main */,
 				B01FDD65271387A1001A696C /* Login */,
@@ -363,13 +391,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				759DFB6B271470DB00781163 /* FinancesMainContract.swift in Sources */,
 				B01FDD67271387BA001A696C /* LoginRouter.swift in Sources */,
 				759DFB532714660800781163 /* MainContract.swift in Sources */,
+				759DFB69271470CF00781163 /* FinancesMainRouter.swift in Sources */,
 				759DFB5D2714690700781163 /* HomeView.swift in Sources */,
+				759DFB67271470C100781163 /* FinancesMainView.swift in Sources */,
 				759DFB632714692200781163 /* HomeViewModel.swift in Sources */,
 				759DFB51271465F900781163 /* MainView.swift in Sources */,
 				759DFB612714691A00781163 /* HomeRouter.swift in Sources */,
 				B01FDD69271387C5001A696C /* LoginContract.swift in Sources */,
+				759DFB6D271470E900781163 /* FinancesMainViewModel.swift in Sources */,
 				B01FDD6D271387E7001A696C /* LoginViewModel.swift in Sources */,
 				759DFB552714661100781163 /* MainViewModel.swift in Sources */,
 				B01FDD712713884A001A696C /* ServiceContainer.swift in Sources */,
