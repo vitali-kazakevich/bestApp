@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		759DFB51271465F900781163 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759DFB50271465F900781163 /* MainView.swift */; };
+		759DFB532714660800781163 /* MainContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759DFB522714660800781163 /* MainContract.swift */; };
+		759DFB552714661100781163 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759DFB542714661100781163 /* MainViewModel.swift */; };
+		759DFB572714661A00781163 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759DFB562714661A00781163 /* MainRouter.swift */; };
+		759DFB5A271467D000781163 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759DFB59271467D000781163 /* User.swift */; };
+		759DFB5D2714690700781163 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759DFB5C2714690700781163 /* HomeView.swift */; };
+		759DFB5F2714691200781163 /* HomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759DFB5E2714691200781163 /* HomeContract.swift */; };
+		759DFB612714691A00781163 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759DFB602714691A00781163 /* HomeRouter.swift */; };
+		759DFB632714692200781163 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759DFB622714692200781163 /* HomeViewModel.swift */; };
 		B01FDD392713875D001A696C /* BestAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01FDD382713875D001A696C /* BestAppApp.swift */; };
 		B01FDD3D2713875E001A696C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B01FDD3C2713875E001A696C /* Assets.xcassets */; };
 		B01FDD402713875E001A696C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B01FDD3F2713875E001A696C /* Preview Assets.xcassets */; };
@@ -39,6 +48,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		759DFB50271465F900781163 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		759DFB522714660800781163 /* MainContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContract.swift; sourceTree = "<group>"; };
+		759DFB542714661100781163 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		759DFB562714661A00781163 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		759DFB59271467D000781163 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		759DFB5C2714690700781163 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		759DFB5E2714691200781163 /* HomeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContract.swift; sourceTree = "<group>"; };
+		759DFB602714691A00781163 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		759DFB622714692200781163 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		B01FDD352713875D001A696C /* BestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B01FDD382713875D001A696C /* BestAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestAppApp.swift; sourceTree = "<group>"; };
 		B01FDD3C2713875E001A696C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,6 +99,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		759DFB4F271465DC00781163 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				759DFB50271465F900781163 /* MainView.swift */,
+				759DFB522714660800781163 /* MainContract.swift */,
+				759DFB542714661100781163 /* MainViewModel.swift */,
+				759DFB562714661A00781163 /* MainRouter.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		759DFB58271467C800781163 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				759DFB59271467D000781163 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		759DFB5B271468F300781163 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				759DFB5C2714690700781163 /* HomeView.swift */,
+				759DFB5E2714691200781163 /* HomeContract.swift */,
+				759DFB602714691A00781163 /* HomeRouter.swift */,
+				759DFB622714692200781163 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		B01FDD2C2713875D001A696C = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +187,8 @@
 		B01FDD6227138774001A696C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				759DFB5B271468F300781163 /* Home */,
+				759DFB4F271465DC00781163 /* Main */,
 				B01FDD65271387A1001A696C /* Login */,
 			);
 			path = Modules;
@@ -177,6 +227,7 @@
 		B01FDD72271388CD001A696C /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				759DFB58271467C800781163 /* Models */,
 				B01FDD7327138B09001A696C /* LoginService.swift */,
 			);
 			path = Login;
@@ -313,11 +364,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				B01FDD67271387BA001A696C /* LoginRouter.swift in Sources */,
+				759DFB532714660800781163 /* MainContract.swift in Sources */,
+				759DFB5D2714690700781163 /* HomeView.swift in Sources */,
+				759DFB632714692200781163 /* HomeViewModel.swift in Sources */,
+				759DFB51271465F900781163 /* MainView.swift in Sources */,
+				759DFB612714691A00781163 /* HomeRouter.swift in Sources */,
 				B01FDD69271387C5001A696C /* LoginContract.swift in Sources */,
 				B01FDD6D271387E7001A696C /* LoginViewModel.swift in Sources */,
+				759DFB552714661100781163 /* MainViewModel.swift in Sources */,
 				B01FDD712713884A001A696C /* ServiceContainer.swift in Sources */,
 				B01FDD6F271387F1001A696C /* LoginView.swift in Sources */,
+				759DFB5A271467D000781163 /* User.swift in Sources */,
+				759DFB5F2714691200781163 /* HomeContract.swift in Sources */,
 				B01FDD392713875D001A696C /* BestAppApp.swift in Sources */,
+				759DFB572714661A00781163 /* MainRouter.swift in Sources */,
 				B01FDD7427138B09001A696C /* LoginService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,7 +16,6 @@ extension LoginViewModel {
 final class LoginViewModel: LoginViewModelProtocol {
     @Published var login = ""
     @Published var password = ""
-    @Published var isLoggedIn = false
     
     private let dependencies: Dependencies
     
@@ -25,6 +24,6 @@ final class LoginViewModel: LoginViewModelProtocol {
     }
     
     func submit() {
-        isLoggedIn = dependencies.loginService.login(with: login, password: password)
+        dependencies.loginService.login(with: login, password: password)
     }
 }

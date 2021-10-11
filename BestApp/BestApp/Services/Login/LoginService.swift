@@ -5,16 +5,30 @@
 //  Created by Vitali Kazakevich on 10/10/21.
 //
 
-import Foundation
+import Combine
 
 protocol LoginService {
-    func login(with login: String, password: String) -> Bool
+    var loggedUser: AnyPublisher<User?, Never> { get }
+    func login(with login: String, password: String)
+    func logout()
 }
 
-final class AppLoginService {}
+final class AppLoginService {
+    @Published private var loggedUserValue: User?
+}
 
 extension AppLoginService: LoginService {
-    func login(with login: String, password: String) -> Bool {
-        return login == "vitaly" && password == "vitaly"
+    var loggedUser: AnyPublisher<User?, Never> {
+        return $loggedUserValue.eraseToAnyPublisher()
+    }
+
+    func login(with login: String, password: String) {
+        if login.lowercased() == "vitaly" && password.lowercased() == "vitaly" {
+            loggedUserValue = User(name: "Vitaly")
+        }
+    }
+
+    func logout() {
+        loggedUserValue = nil
     }
 }

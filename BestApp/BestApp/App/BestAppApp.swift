@@ -11,7 +11,7 @@ import SwiftUI
 struct BestAppApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginRouter(services: .shared).makeView()
+            MainRouter().makeView()
         }
     }
 }
